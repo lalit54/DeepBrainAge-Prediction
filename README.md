@@ -51,3 +51,136 @@ The core model is a **3D Convolutional Neural Network (3D-CNN)** built upon the 
 
 
 download the dataset from https://drive.google.com/file/d/1M-isVkdWSuBEwhfp2Oto8-2UxGD4DLV-/view?usp=drive_link
+
+
+DeepBrainAge - Brain Age Prediction System
+
+Overview
+
+DeepBrainAge is an AI-powered brain age prediction system that estimates a person's biological brain age using MRI scans. The project leverages Deep Learning techniques based on ResNet-50 architecture to analyze neuroimaging data and provide accurate age estimation for cognitive assessment and neurological research.
+
+---
+
+Features
+
+- MRI Scan Upload and Processing
+- Brain Age Prediction using Deep Learning
+- Interactive Web Interface
+- Prediction History Tracking
+- FastAPI-based Backend Services
+- Responsive User Interface
+- Confidence Score and Prediction Metrics
+- Real-time Inference Visualization
+
+---
+
+Technology Stack
+
+Frontend
+
+- React.js (TypeScript)
+- Tailwind CSS
+- Framer Motion
+- Lucide React Icons
+- Axios / Fetch API
+
+Backend
+
+- FastAPI
+- Python
+- Pydantic
+- NumPy
+- OpenCV
+
+Deep Learning
+
+- PyTorch
+- ResNet-50 Architecture
+- 3D Convolutional Neural Network (3D-CNN)
+
+---
+
+Model Details
+
+- Model Type: 3D CNN based on ResNet-50
+- Framework: PyTorch
+- Input: MRI Brain Scans
+- Output: Predicted Brain Age
+- Optimizer: Adam
+- Loss Function: Mean Absolute Error (MAE)
+- Evaluation Metrics:
+  - MAE
+  - R² Score
+  - Confidence Score
+
+---
+
+Project Structure
+
+DeepBrainAge-Prediction/
+│
+├── app/
+├── src/
+├── models/
+├── data/
+├── supabase/
+│
+├── package.json
+├── README.md
+├── index.html
+└── configuration files
+
+Dataset
+
+Dataset Link:
+
+https://drive.google.com/file/d/1M-isVkdWSuBEwhfp2Oto8-2UxGD4DLV-/view
+
+Note: Large model files may not be included in this repository due to GitHub storage limitations.
+
+---
+
+Installation
+
+npm install
+npm run dev
+
+Backend:
+
+pip install -r requirements.txt
+python main.py
+
+---
+
+Applications
+
+- Cognitive Age Assessment
+- Neurological Research
+- Brain Health Monitoring
+- Medical AI Research
+- Neuroimaging Analysis
+
+---
+
+Team Members
+
+- Lalit Dattatray Kasavkar
+- Team Member 2
+- Team Member 3
+- Team Member 4
+
+---
+
+Future Enhancements
+
+- Improved Model Accuracy
+- Multi-modal MRI Support
+- Cloud Deployment
+- Advanced Analytics Dashboard
+- Clinical Integration
+
+---
+
+License
+
+This project was developed for academic and research purposes.
