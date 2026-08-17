@@ -52,71 +52,56 @@ The core model is a **3D Convolutional Neural Network (3D-CNN)** built upon the 
 
 download the dataset from https://drive.google.com/file/d/1M-isVkdWSuBEwhfp2Oto8-2UxGD4DLV-/view?usp=drive_link
 
+# DeepBrainAge - Brain Age Prediction System
 
-DeepBrainAge - Brain Age Prediction System
+## Overview
+DeepBrainAge is an AI-powered brain age prediction system that estimates a person's biological brain age from MRI scans. The project uses a 3D Convolutional Neural Network (3D-CNN) based on ResNet-50 for neuroimaging analysis and cognitive age estimation.
 
-Overview
-
-DeepBrainAge is an AI-powered brain age prediction system that estimates a person's biological brain age using MRI scans. The project leverages Deep Learning techniques based on ResNet-50 architecture to analyze neuroimaging data and provide accurate age estimation for cognitive assessment and neurological research.
-
----
-
-Features
+## Features
 
 - MRI Scan Upload and Processing
 - Brain Age Prediction using Deep Learning
+- FastAPI Backend Services
 - Interactive Web Interface
-- Prediction History Tracking
-- FastAPI-based Backend Services
-- Responsive User Interface
-- Confidence Score and Prediction Metrics
+- Prediction Metrics and Confidence Score
 - Real-time Inference Visualization
+- Responsive User Interface
 
----
+## Technology Stack
 
-Technology Stack
-
-Frontend
-
+### Frontend
 - React.js (TypeScript)
 - Tailwind CSS
+- Axios
 - Framer Motion
-- Lucide React Icons
-- Axios / Fetch API
 
-Backend
-
-- FastAPI
+### Backend
 - Python
+- FastAPI
 - Pydantic
 - NumPy
 - OpenCV
 
-Deep Learning
-
+### Deep Learning
 - PyTorch
-- ResNet-50 Architecture
+- ResNet-50
 - 3D Convolutional Neural Network (3D-CNN)
 
----
+## Model Information
 
-Model Details
+| Parameter | Value |
+|------------|---------|
+| Model Type | 3D CNN based on ResNet-50 |
+| Framework | PyTorch |
+| Input | MRI Brain Scans |
+| Output | Predicted Brain Age |
+| Optimizer | Adam |
+| Loss Function | Mean Absolute Error (MAE) |
+| Metrics | MAE, R² Score, Confidence Score |
 
-- Model Type: 3D CNN based on ResNet-50
-- Framework: PyTorch
-- Input: MRI Brain Scans
-- Output: Predicted Brain Age
-- Optimizer: Adam
-- Loss Function: Mean Absolute Error (MAE)
-- Evaluation Metrics:
-  - MAE
-  - R² Score
-  - Confidence Score
+## Project Structure
 
----
-
-Project Structure
-
+```text
 DeepBrainAge-Prediction/
 │
 ├── app/
@@ -124,63 +109,57 @@ DeepBrainAge-Prediction/
 ├── models/
 ├── data/
 ├── supabase/
-│
 ├── package.json
-├── README.md
 ├── index.html
-└── configuration files
+└── README.md
+```
 
-Dataset
+## Dataset
 
-Dataset Link:
+Dataset Download:
 
-https://drive.google.com/file/d/1M-isVkdWSuBEwhfp2Oto8-2UxGD4DLV-/view
+[Google Drive Dataset Link]
 
-Note: Large model files may not be included in this repository due to GitHub storage limitations.
+> Note: Large model files are not included in this repository because of GitHub file size limitations.
 
----
+## Installation
 
-Installation
+### Frontend
 
+```bash
 npm install
 npm run dev
+```
 
-Backend:
+### Backend
 
+```bash
 pip install -r requirements.txt
 python main.py
+```
 
----
-
-Applications
+## Applications
 
 - Cognitive Age Assessment
-- Neurological Research
+- Neuroimaging Analysis
 - Brain Health Monitoring
 - Medical AI Research
-- Neuroimaging Analysis
+- Neurological Studies
 
----
-
-Team Members
+## Team Members
 
 - Lalit Dattatray Kasavkar
 - Team Member 2
 - Team Member 3
 - Team Member 4
 
----
-
-Future Enhancements
+## Future Enhancements
 
 - Improved Model Accuracy
-- Multi-modal MRI Support
 - Cloud Deployment
+- Multi-modal MRI Support
 - Advanced Analytics Dashboard
-- Clinical Integration
 
----
-
-License
+## License
 
 This project was developed for academic and research purposes.
